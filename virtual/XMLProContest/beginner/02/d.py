@@ -1,7 +1,11 @@
-n, m = map(int, input().split())
-if n==1 and m==1:
-    print(1)
-elif n==1 or m==1:
-    print(n*m-2)
+d, n = map(int, input().split())
+if d==0 and n==100:
+    print(101)
+elif d==1 and n==100:
+    print(10100)
+elif d==2 and n==100:
+    print(1010000)
 else:
-    print((n-2)*(m-2))
+    ans = 100**d*n
+    print(ans)
+

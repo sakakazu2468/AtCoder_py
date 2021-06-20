@@ -1,17 +1,14 @@
-a = int(input())
+n = int(input())
+s = input()
+t = input()
+t_idx = 0
+for i in range(len(s)):
+    if t[t_idx] == s[i]:
+        t_idx += 1
+    else:
+        t_idx = 0
+        if t[t_idx] == s[i]:
+            t_idx = 1
+print(len(s+t[t_idx:]))
 
-def f(x):
-    total = 0
-    str_x = str(x)
-    for i in range(len(str_x)):
-        total += x**i * int(str_x[-1*(i+1)])
-    return total
-
-for i in range(10, 10001):
-    if f(i) == a:
-        print(i)
-        break
-else:
-    print(-1)
-
-
+    

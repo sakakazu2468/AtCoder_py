@@ -1,9 +1,8 @@
-h, m = map(int, input().split())
+n, x = map(int, input().split())
+mdonut = 10**5
+for i in range(n):
+    m = int(input())
+    mdonut = min(m, mdonut)
+    x -= m
 
-minits = 0
-if m != 0:
-    minits += 60 - m
-    h += 1
-minits += (18 - h) * 60
-
-print(minits)
+print(n+(x//mdonut))
