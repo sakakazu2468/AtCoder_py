@@ -14,10 +14,14 @@ else:
                 lower += 1
             else:
                 upper += 1
-        if upper != 2:
-            print("WA")
-        else: 
+        if upper == 2:
             print("AC")
+        else:
+            print("WA")
+        # if upper != 2:
+        #     print("WA")
+        # else: 
+        #     print("AC")
     else:
         print("WA")
 

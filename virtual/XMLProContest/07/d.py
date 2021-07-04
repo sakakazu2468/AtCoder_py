@@ -14,6 +14,9 @@ points = 0
 for i in range(k):
     idx = i
     prev = ""
+
+    # for j in range(idx, n, k)
+
     while True:
         not_win = False
         if t[idx] != prev:

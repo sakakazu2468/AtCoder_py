@@ -7,6 +7,7 @@ same_numder[sum_a] = same_numder.get(sum_a, 0)+1
 for num in a:
     sum_a += num
     same_numder[sum_a] = same_numder.get(sum_a, 0)+1
+    # print(same_numder)
 
 ans = 0
 for count in same_numder.values():
