@@ -1,2 +1,3 @@
 # AtCoder_py
-AtCoderのコードを置いとく場所
+```$ python3 atcoderbot.py```
+で動きますが、足りない場合はpip等を使って環境構築を行って下さい。
